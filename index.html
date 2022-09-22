@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-compatible" content="ie=edge">
+    <title>Juego Ahorcado</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+
+</head>
+
+<body>
+
+    <section class="pagina-inicial" id="pagina-inicial">
+        <button type="submit" class="boton btniniciar" id="btniniciar" onclick=iniciarJuego()>Iniciar Juego</button>
+        <button class="boton btnagregar" type="submit" id="btnagregar" onclick=agregarPalabra()>Agregar Palabra</button>
+    </section>
+
+    <section class="pagina-agregar" id="pagina-agregar">
+        <input id="nuevaPalabra" class="palabranueva">
+        <p>Maximo 8 letras</p>
+        <button class="boton btnguardar" onclick="guardarPalabra()">Guardar Palabra</button>
+        <button class="boton btncancelar" type="submit" id="btncancelar" onclick=volverInicio()>Cancelar</button>
+    </section>
+
+    <section class="pagina-juego" id="pagina-juego">
+        <div class="mitad1">
+            <div id="imagen"><img src="img/5intentos.png"></div>
+            <!-- <canvas id="dibujo" width="600px" height="400px"></canvas> -->
+        </div>
+
+        <div class="medio" id="btnTablero">
+            <p class="letras-usadas" id="letras-usadas"></p>
+            <input class="tablero" type="button" value="A" onclick="elegirLetra(this)">
+            <input class="tablero" type="button" value="B" onclick="elegirLetra(this)">
+            <input class="tablero" type="button" value="C" onclick="elegirLetra(this)">
+            <input class="tablero" type="button" value="D" onclick="elegirLetra(this)">
+            <input class="tablero" type="button" value="E" onclick="elegirLetra(this)">
+            <input class="tablero" type="button" value="F" onclick="elegirLetra(this)">
+            <input class="tablero" type="button" value="G" onclick="elegirLetra(this)">
+            <input class="tablero" type="button" value="H" onclick="elegirLetra(this)">
+            <input class="tablero" type="button" value="I" onclick="elegirLetra(this)">
+            <input class="tablero" type="button" value="J" onclick="elegirLetra(this)">
+            <input class="tablero" type="button" value="K" onclick="elegirLetra(this)">
+            <input class="tablero" type="button" value="L" onclick="elegirLetra(this)">
+            <input class="tablero" type="button" value="M" onclick="elegirLetra(this)">
+            <input class="tablero" type="button" value="N" onclick="elegirLetra(this)">
+            <input class="tablero" type="button" value="Ñ" onclick="elegirLetra(this)">
+            <input class="tablero" type="button" value="O" onclick="elegirLetra(this)">
+            <input class="tablero" type="button" value="P" onclick="elegirLetra(this)">
+            <input class="tablero" type="button" value="Q" onclick="elegirLetra(this)">
+            <input class="tablero" type="button" value="R" onclick="elegirLetra(this)">
+            <input class="tablero" type="button" value="S" onclick="elegirLetra(this)">
+            <input class="tablero" type="button" value="T" onclick="elegirLetra(this)">
+            <input class="tablero" type="button" value="U" onclick="elegirLetra(this)">
+            <input class="tablero" type="button" value="V" onclick="elegirLetra(this)">
+            <input class="tablero" type="button" value="W" onclick="elegirLetra(this)">
+            <input class="tablero" type="button" value="X" onclick="elegirLetra(this)">
+            <input class="tablero" type="button" value="Y" onclick="elegirLetra(this)">
+            <input class="tablero" type="button" value="Z" onclick="elegirLetra(this)">
+
+            <p id="incognita"></p>
+            <p id="numintentos"></p>
+            <div id="mensajefinal"></div>
+
+        </div>
+
+        <div class="mitad2">
+            <button class="boton btnnuevojuego" type="submit" id="btnnuevojuego" onclick=nuevoJuego()>Empezar</button>
+            <button class="boton btnrendirse" type="submit" id="btnrendirse" onclick=volverInicio()>Rendirse</button>
+        </div>  
+        
+    </section>
+
+    <script src="horca.js"></script>
+    <script src="palabras.js"></script>
+
+</body>
+
+</html>
+

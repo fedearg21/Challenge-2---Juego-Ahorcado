@@ -1,0 +1,142 @@
+*{
+    font-family: 'Silkscreen', cursive;
+}
+.boton{
+    width: 250px;
+    height: 150px;
+    padding: 15px;
+    margin: 50px;
+    border-radius: 10%;
+    border: #052051;
+    background-color: #072B61;
+    color: #E9ECF8;
+}
+
+/* ///////////////// pagina inicial /////////// */
+
+.pagina-inicial{
+    background-color: #E9ECF8;
+    text-align: center;
+    height: 100vh;
+    max-width: 100%;
+}
+
+.btniniciar, .btnagregar{
+    vertical-align: middle;
+    margin-top: 20%;
+}
+
+/* //////////////// pagina palabra nueva /////////  */
+
+.pagina-agregar{
+    background-color: #E9ECF8;
+    text-align: center;
+    height: 100vh;
+    display: none;
+}
+
+.palabranueva{
+    margin-top: 10%;
+    font-size: 3em;
+}
+
+.pagina-agregar p {
+    margin: 15px;
+    font-size: 2em;
+}
+
+.btnguardar, .btncancelar{
+    vertical-align: middle;
+    margin-top: 5%;
+}
+
+/* //////////////////// pagina juego ////////////// */
+
+.pagina-juego{
+    background-color: #E9ECF8;
+    text-align: center;
+    height: 100vh;
+    display: none;
+}
+
+.mitad1{
+    height: 50vh;
+}
+
+#imagen{
+    padding: 5%;
+}
+
+.medio{
+    height: 15vh;
+    padding: 2%;
+}
+
+#incognita{
+    display: block;
+    width: 100%;
+    letter-spacing: 10px;
+}
+
+.tablero{
+    background-color: #072B61;
+    color: #609ED4;
+}
+
+.tablero2{
+    background-color: #000;
+    color: #000;
+}
+
+.mitad2{
+    height: 25vh;
+}
+
+.btnnuevojuego, .btnrendirse{
+    margin-top: 1%;
+}
+
+@media only screen and (max-width: 1279px){
+    .boton{
+        width: 200px;
+        height: 100px;
+        padding: 15px;
+        margin: 25px;
+    }
+    .btniniciar,.btnagregar{
+        width: 220px;
+        height: 150px;
+        padding: 15px;
+        margin-top: 20%;
+    }
+}
+
+
+@media only screen and (max-width: 650px){
+    .boton{
+        width: 100px;
+        height: 60px;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .btniniciar,.btnagregar{
+        width: 200px;
+        height: 120px;
+        padding: 15px;
+        margin-top: 30%;
+    }
+
+    .tablero{
+        margin: 3px;
+    }
+    .mitad1{
+        height: 40vh;
+    }
+    .medio{
+        height: 35vh;
+    }
+    .mitad2{
+        height: 25vh;
+    }
+}
